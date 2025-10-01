@@ -67,6 +67,7 @@ if you want to init in any specific branch or just want to do with main
         git merge main        # You'll see a conflict in conflict.txt
 
    // Open the file and manually fix it
+
         git add conflict.txt
         git commit -m "Resolve conflict between branch-a and branch-b"
         git push origin branch-b
