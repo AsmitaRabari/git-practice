@@ -44,27 +44,27 @@ git pull origin main
 
 8. Simulate merge conflict
 
-git checkout -b branch-a
+        git checkout -b branch-a
+        
+        echo "Line from A" > conflict.txt
+        
+        git add conflict.txt
+        
+        git commit -m "Add line from A"
+        
+        git push origin branch-a
 
-echo "Line from A" > conflict.txt
-
-git add conflict.txt
-
-git commit -m "Add line from A"
-
-git push origin branch-a
-
-git checkout main
-
-git checkout -b branch-b
-
-echo "Line from B" > conflict.txt
-
-git add conflict.txt
-
-git commit -m "Add line from B"
-
-git push origin branch-b
+        git checkout main
+        
+        git checkout -b branch-b
+        
+        echo "Line from B" > conflict.txt
+        
+        git add conflict.txt
+        
+        git commit -m "Add line from B"
+        
+        git push origin branch-b
 
 
 9. Resolving conflict
