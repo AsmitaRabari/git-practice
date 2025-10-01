@@ -64,7 +64,7 @@ git checkout main
 git pull origin main
 git checkout branch-b
 git merge main        # You'll see a conflict in conflict.txt
-# Open the file and manually fix it
+// Open the file and manually fix it
 git add conflict.txt
 git commit -m "Resolve conflict between branch-a and branch-b"
 git push origin branch-b
