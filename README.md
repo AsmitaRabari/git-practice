@@ -65,13 +65,14 @@ if you want to init in any specific branch or just want to do with main
         git pull origin main
         git checkout branch-b
         git merge main        # You'll see a conflict in conflict.txt
-   
-// Open the file and manually fix it
+
+   // Open the file and manually fix it
         git add conflict.txt
         git commit -m "Resolve conflict between branch-a and branch-b"
         git push origin branch-b
 
 
-10. pull all changes from github
+11. pull all changes from github
+
         git pull origin main   # Fetch + merge remote changes
 
